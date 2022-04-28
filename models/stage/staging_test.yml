@@ -19,15 +19,15 @@ models:
     columns:
       - name: region_id
         description: '{{ doc("primary_key") }}'
-        tests:
-          - unique
-          - not_null
-      - name: name
-        tests:
-          - accepted_values:
-              values: ['AMERICA', 'EUROPE']
-              config:
-                store_failures: true
+ #       tests:
+ #         - unique
+ #         - not_null
+ #     - name: name
+ #       tests:
+#          - accepted_values:
+#              values: ['AMERICA', 'EUROPE']
+ #             config:
+ #               store_failures: true
   - name: stg_orders
     description: List of orders
     columns: 
